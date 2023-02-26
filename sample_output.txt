@@ -1,0 +1,104 @@
+####### CHECK THE USER TO BE SETUP ######
+{
+  'gergore.clooney@email.com': [
+    {
+      firstname: 'Geroge',
+      lastname: 'Clooney',
+      email: 'gergore.clooney@email.com',
+      reponame: 'repo1'
+    }
+  ],
+  'sandra.bullock@email.com': [
+    {
+      firstname: 'Sandra',
+      lastname: 'Bullock',
+      email: 'sandra.bullock@email.com',
+      reponame: 'repo2'
+    },
+    {
+      firstname: 'Sandra',
+      lastname: 'Bullock',
+      email: 'sandra.bullock@email.com',
+      reponame: 'ABCD'
+    }
+  ],
+  'keanu.reeves@email.com': [
+    {
+      firstname: 'Keanu',
+      lastname: 'Reeves',
+      email: 'keanu.reeves@email.com',
+      reponame: 'repo1'
+    },
+    {
+      firstname: 'Keanu',
+      lastname: 'Reeves',
+      email: 'keanu.reeves@email.com',
+      reponame: 'repo2'
+    }
+  ],
+  'monty.python@email.com': [
+    {
+      firstname: 'Monty',
+      lastname: 'Python',
+      email: 'monty.python@email.com',
+      reponame: '1234'
+    },
+    {
+      firstname: 'Monty',
+      lastname: 'Python',
+      email: 'monty.python@email.com',
+      reponame: 'ABCD'
+    },
+    {
+      firstname: 'Monty',
+      lastname: 'Python',
+      email: 'monty.python@email.com',
+      reponame: 'repo1'
+    }
+  ]
+}
+
+
+####### FOUND 4 USER RECORDS TO PROCESS
+
+- User to check gergore.clooney@email.com:
+-- User gergore.clooney@email.com doesnt exists - lets create them
+---- trying to setup team (repo1), just in case it doesn't exits
+----- Team repo1 didn't exist on the Veracode Platform and was created
+--- User gergore.clooney@email.com will be created now
+---- User gergore.clooney@email.com has been setup with user_id 2791da98-3038-4112-9f94-d328b872a80e on the Veracode Platform.
+
+- User to check sandra.bullock@email.com:
+-- User sandra.bullock@email.com doesnt exists - lets create them
+---- trying to setup team (repo2), just in case it doesn't exits
+----- Team repo2 didn't exist on the Veracode Platform and was created
+---- trying to setup team (ABCD), just in case it doesn't exits
+----- Team ABCD already exists on the Veracode Platform -> no need to create
+--- User sandra.bullock@email.com will be created now
+---- User sandra.bullock@email.com has been setup with user_id 9630f0dc-a38f-4ade-981d-537179503f8e on the Veracode Platform.
+
+- User to check keanu.reeves@email.com:
+-- User keanu.reeves@email.com doesnt exists - lets create them
+---- trying to setup team (repo1), just in case it doesn't exits
+----- Team repo1 already exists on the Veracode Platform -> no need to create
+---- trying to setup team (repo2), just in case it doesn't exits
+----- Team repo2 already exists on the Veracode Platform -> no need to create
+--- User keanu.reves@email.com will be created now
+---- User keanu.reeves@email.com has been setup with user_id c6c23b4a-54b9-4181-94be-7a584b29f6ee on the Veracode Platform.
+
+- User to check monty.python@email.com:
+-- User monty.python@email.com already exists - lets check the teams
+--- Teams the user 4e46bba4-6791-4020-9998-31a3401947d0 is setup for:
+---- Team Name: 1234
+---- Team Name: ABCD
+---- trying to setup team (1234), just in case it doesn't exits
+----- Team 1234 already exists on the Veracode Platform -> no need to create
+---- trying to setup team (ABCD), just in case it doesn't exits
+----- Team ABCD already exists on the Veracode Platform -> no need to create
+---- trying to setup team (repo1), just in case it doesn't exits
+----- Team repo1 already exists on the Veracode Platform -> no need to create
+--- Number of teams the user has access to: 2
+--- Number of teams found on account: 2
+--- Number of teams the user needs access to: 3
+--- Teams mismatch -> user needs update
+--- Teams for user 4e46bba4-6791-4020-9998-31a3401947d0 have successfully been updated
